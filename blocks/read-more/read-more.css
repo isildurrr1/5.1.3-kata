@@ -1,0 +1,36 @@
+.read-more {
+  display: flex;
+  font-size: 16px;
+  font-weight: 600;
+  height: 24px;
+  align-items: center;
+  margin: 16px 0 0 31px;
+  cursor: pointer;
+  transition: opacity .3s;
+}
+
+.read-more:hover {
+  opacity: 0.6;
+}
+
+.read-more::before {
+  content: '';
+  position: absolute;
+  margin-left: -30px;
+  width: 24px;
+  height: 24px;
+  background: url(../../../images/expand.svg);
+}
+
+@media screen and (min-width: 520px) {
+  .read-more {
+    margin: 10px 0 0 31px;
+  }
+}
+
+@media screen and (min-width: 880px) {
+  .read-more {
+    margin-top: 12px;
+    letter-spacing: -0.2px;
+  }
+}

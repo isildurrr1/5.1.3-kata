@@ -1,0 +1,7 @@
+.page {
+  font-family: "TTLakes", "Arial", "Helvetica", sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: #F8F8F8;
+}
