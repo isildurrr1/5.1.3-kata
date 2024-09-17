@@ -5,6 +5,17 @@
   border: 1px solid #EAEAEA;
   border-radius: 5px;
   display: flex;
+  cursor: pointer;
+  transition: transform .3s;
+}
+
+.brands-container__element:hover img:last-child {
+  transition: transform .3s;
+  transform: scale(1.1);
+}
+
+.brands-container__element:active {
+  transform: scale(0.97);
 }
 
 @media screen and (min-width: 520px) {
@@ -12,7 +23,6 @@
     width: 224px;
     display: flex;
     flex-wrap: wrap;
-    /* gap: 16px; */
     height: 72px;
   }
 }
