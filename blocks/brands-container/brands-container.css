@@ -1,5 +1,19 @@
-/* .brands-container {
-} */
+.brands-container {
+  position: relative;
+  padding-bottom: 38px;
+}
+
+.brands-container::after {
+  content: "";
+  text-align: right;
+  position: absolute;
+  top: 16px;
+  right: 0;
+  width: 24px;
+  height: 72px;
+  background: linear-gradient(to right, #F8F8F800, #F8F8F8 100%);
+  z-index: 1;
+}
 
 @media screen and (min-width: 880px) {
   .brands-container {

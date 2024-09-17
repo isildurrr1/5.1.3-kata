@@ -5,6 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="./pages/index.css">
+  <link rel="stylesheet" href="./vendor/swiper/swiper-bundle.min.css" />
   <title>Третий блок</title>
 </head>
 
@@ -58,11 +59,15 @@
           <img src="./images/go.svg" alt="Иконка вперед" class="brands-container__go">
         </li>
       </ul>
+      <div class="swiper-pagination" style="visibility: hidden;"></div>
       <div class="read-more">
-        Скрыть
+        <span class="read-more__icon"></span>
+        <span class="read-more__text">Показать все</span>
       </div>
     </div>
   </div>
+  <script src="./vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="./pages/index.js"></script>
 </body>
 
 </html>
