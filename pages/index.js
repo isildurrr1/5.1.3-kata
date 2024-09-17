@@ -35,10 +35,23 @@ checkScreen(screenWidth)
 const readMore = () => {
   if (readMoreText.textContent === 'Показать все') {
     brandsContainerList.style = "animation: open 1s"
-    setTimeout(() => {
-      brandsContainerList.style = "height: 248px"
-    }, 1000)
+    if (screenWidth < 1120 && screenWidth > 754) {
+      console.log(screenWidth)
+      setTimeout(() => {
+        brandsContainerList.style = "height: 336px"
+      }, 1000)
+    } else if (screenWidth < 754) {
+      setTimeout(() => {
+        brandsContainerList.style = "height: 512px"
+      }, 1000)
+    } else if (screenWidth > 1120) {
+      setTimeout(() => {
+        brandsContainerList.style = "height: 248px"
+      }, 1000)
 
+      readMoreIcon.style = 'transform: rotate(0)'
+      readMoreText.textContent = 'Показать все';
+    }
     readMoreIcon.style = 'transform: rotate(180deg)'
     readMoreText.textContent = 'Скрыть';
   } else {
